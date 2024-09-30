@@ -1,0 +1,1 @@
+export const TOASTR_MESSAGE_DURATION: number = 5000; // ms

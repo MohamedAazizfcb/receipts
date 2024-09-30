@@ -1,0 +1,44 @@
+$toastr-padding: 15px;
+$toastr-border-radius: 5px;
+$toastr-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+$toastr-success-color: #28a745;
+$toastr-error-color: #dc3545;
+$toastr-info-color: #17a2b8;
+$toastr-warning-color: #ffc107;
+$toastr-text-color: #fff;
+$toastr-top: 10px;
+$toastr-right: 10px;
+$toastr-gap: 10px;
+
+.toastr-container {
+  position: fixed;
+  top: $toastr-top;
+  right: $toastr-right;
+  display: flex;
+  flex-direction: column;
+  gap: $toastr-gap;
+}
+
+.toastr {
+  padding: $toastr-padding;
+  border-radius: $toastr-border-radius;
+  color: $toastr-text-color;
+  box-shadow: $toastr-shadow;
+  animation: slideInRight 0.3s ease-out;
+}
+
+.toastr-success {
+  background-color: $toastr-success-color;
+}
+
+.toastr-error {
+  background-color: $toastr-error-color;
+}
+
+.toastr-info {
+  background-color: $toastr-info-color;
+}
+
+.toastr-warning {
+  background-color: $toastr-warning-color;
+}

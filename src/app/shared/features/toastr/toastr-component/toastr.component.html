@@ -1,0 +1,7 @@
+<div class="toastr-container">
+    @for (message of messages; track $index) {
+        <div [@fadeInOut] [@slideInRight] class="toastr" [ngClass]="getMessageClass(message.type)">
+            <p>{{ message.message }}</p>
+        </div>
+    }
+</div>
